@@ -2,7 +2,7 @@
     function fetchWeather(city) {
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q="
-           + city+"&units=metric&appid=78171e6da2d7341a20b5f0d7a5b14d5e"
+           + city+"&units=metric&appid=78171e6da2d7341a20b5f0d7a5b14d5e" , {mode: 'no-cors'}
         )
         .then((response) => response.json())
         .then((data) => 
